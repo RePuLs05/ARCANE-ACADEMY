@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "IM Fell English", serif;
+}
+ul{
+    list-style: none;
+}
+
+button{
+    font-family: inherit;
+    padding: 0 20px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* header */
+
+header{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 960px;
+    background: linear-gradient(#FAEACA, #EFCFA4);
+    margin: 0 auto;
+    /* height: 44px; */
+    border-radius: 99px;
+    padding: 5px;
+    box-shadow: 0px 4px 4px #0000004a
+    /* margin-top: 30px; */
+}
+nav{
+    margin-left:20px;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    color: #A9895D;
+    font-size: 12px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+header nav ul li:hover{
+    color: #4A3211;
+    
+}
+
+span.separator{
+    margin: 0 20px;
+    width: 1px;
+    height: 18px;
+    background-color: #EDCEA3;
+}
+
+.header-cta{
+    background: linear-gradient(#9BB6B3, #5F888A);
+    border: none;
+    border-radius: 99px;
+}
+
+.header-cta span{
+    color: #D6F2EC;
+    font-size: 14px;
+}
+.header-cta-icon{
+    margin-left: 11px;
+
+}
+
+
+.hero-footer{
+    display: flex;
+}
+
+/* hero section */
+
+section.hero{
+    overflow: hidden;
+    background-image: url("./media/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.adventure-cards {
+    height: 580px;
+    display: flex;
+    align-items: center;
+    background-color: #131D24;
+    padding: 40px 20px;
+}
+
+.adventure-cards__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.adventure-card {
+    height: 354px;
+    min-width: 245px;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.adventure-card__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.adventure-card__subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #79969C;
+}
+
+.adventure-card__description {
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    color: #586061;
+    line-height: 1.6;
+}
+
+.adventure-card__icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.adventure-card__icon {
+    width: 20px;
+    height: 20px;
+    /* background-color: #e67e22; */
+    border-radius: 50%;
+}
+
+
+/* arcane castle hero section */
+
+.arcane-academy-wrapper{
+    min-height: 588px;
+    background-image: url("./media/arcane-palace.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+
+h1{
+    color: #fff;
+    font-size: 36px;
+}
+
+.arcane-button-wrapper {
+    display: flex;
+    width: 273px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #000000cc;
+    border-radius: 99px;
+}
+
+.arcane-academy-cta{
+    width: 50%;
+    border: none;
+    font-size: 12px;
+    padding: 0;
+}
+.arcane-academy-cta:first-child{
+    border-radius: 99px 0 0 99px;
+    background: linear-gradient(#FAEACA, #EFCFA4);
+    color:  #4A3211;
+}
+.arcane-academy-cta:last-child{
+    border-radius: 0 99px 99px 0;
+    background: linear-gradient(#9BB6B3, #5F888A);
+    color: #D6F2EC;
+}
+
+.aracane_awaiting{
+    width: 100%;
+    height: 595px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #131D24;
+}
+
+.aracane_awaiting_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.aracane_awaiting_content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    width: 303px;
+    height: 299px;
+    color: #EEF4F8;
+}
+
+.aracane_awaiting_content button{
+    background: linear-gradient(#FAEACA, #EFCFA4);
+}
+
+.aracane_awaiting_content span{
+    color: #4A3211;
+}
+
+.aracane_awaiting_content h3{
+    font-size: 24px;
+}
+
+.aracane_awaiting_content p{
+    font-size: 12px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3d9b1;
+    padding: 50px;
+    
+}
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 567px;
+    height: 175px;
+}
+
+.contact{
+    width: 305px;
+    height: 150px;
+}
+.contact p{
+    margin: 8px 0;
+    font-size: 12px;
+    color: #4A3211;
+}
+.links{
+    width: 120px;
+    height: auto;
+}
+
+
+.contact h3, 
+.links h3 {
+    margin-bottom: 30px;
+    color: #4A3211;
+}
+
+
+
+.links ul li {
+    margin: 8px 0;
+    font-size: 12px;
+    color: #4A3211;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.icon {
+    max-width: 15%;
+}
+
+.icon img {
+    width: 100%;
+    opacity: 0.5;
+}
+
+.footer-last{
+    width: 100%;
+    height: 65px;
+    background: #131D24;
+    color: #EEF4F8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer-conteinet{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 50px;
+}
+.footer-cta-left{
+  height: 15px;  
+  display: flex;
+  gap: 20px;
+}
+
+
+
